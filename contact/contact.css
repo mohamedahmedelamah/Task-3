@@ -1,0 +1,40 @@
+/* section Home / contact */
+section {
+  padding: 1.5rem 13%;
+  background-color: #f5f7f4;
+  display: flex;
+}
+.thank {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+.thank i {
+  width: 60px;
+  height: 60px;
+  background: #28a745;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 60px;
+  font-size: 2rem;
+}
+.thank h1 {
+  padding-top: 0.9rem;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.thank p {
+  margin-top: 1rem;
+  color: #8c92a0;
+}
+.thank a button {
+  margin-top: 3rem;
+  padding: 12px 35px;
+  letter-spacing: 2px;
+}
+footer {
+  padding-top: 4rem;
+}

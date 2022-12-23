@@ -1,0 +1,473 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden;
+}
+                      /* nav */
+nav {
+  padding: 0 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9rem;
+  border-bottom: 1px solid #eeecff;
+  position: relative;
+}
+nav .nav-left i {
+  color: #84838b;
+}
+nav .nav-left input {
+  border: none;
+  outline: none;
+  transition: 0.4s all;
+  position: relative;
+  left: 1.2rem; 
+  font-size: 1rem;
+}
+nav .nav-left input:focus {
+  left: 0; 
+}
+nav .nav-center button {
+ border: 2px solid #80807e;
+ width: fit-content;
+ padding: 0.7rem;
+ font-size: 1.1rem;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ background: transparent;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%);
+}
+.nav-right {
+  display: flex;
+  gap: 1rem;
+}
+.nav-right i {
+  color: #84838b;
+  transition: 0.4s all;
+}
+.nav-right i:hover {
+  color: black;
+}
+.nav-right div {
+  position: relative;
+  transition: 0.3s all;
+}
+.nav-right div p {
+  position: absolute;
+  color: white;
+  background: #a771f1;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: 50%;
+  top: -22px;
+  left: 10px;
+  text-align: center;
+}
+.nav-right div:hover p {
+   margin-top: -2px;
+}
+
+                              /* navbar */
+.navbar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 1.5rem;
+}
+.navbar li {
+  list-style: none;
+}
+.navbar li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #666;
+  transition: all 0.4s;
+  font-size: 0.9rem;
+}
+.navbar li a.active {
+  color: #853de6;
+}
+.navbar li i {
+  color: #84838b;
+  font-size: 0.6rem;
+  padding-left: 3px;
+}
+.navbar li a:hover {
+  color: #853de6;
+}
+
+                         /* landing page */
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  padding: 4rem 7% 7rem;
+  background: #8ff4ec;
+  align-items: center;
+  gap: 3rem;
+}
+.landing .landing-left {
+  width: 690px;
+  height: auto;
+}
+.landing .landing-left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.landing .landing-right h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.landing .landing-right p {
+  color: #333;
+  padding: 1rem 0;
+  line-height: 2;
+  font-size: 1.3rem;
+}
+
+                        /* section cards*/
+.cards {
+  padding: 0 13% 4rem;
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
+}
+.cards .card {
+  display: flex;
+  gap: 1.5rem;
+}
+.cards .card i {
+  color: #a771f1;
+  font-size: 2.2rem;
+}
+.cards .card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 0.8rem;
+}
+.cards .card p {
+  color: #999;
+  line-height: 1.6;
+}
+
+                         /* section persons*/
+.persons {
+  padding: 0 13%;
+  padding-top: 4rem;
+  border-top: 1px solid #eeecff;
+}
+.persons .parent-card {
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.persons .parent-card .card {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 2px -200px 400px -192px rgba(0,0,0,0.9) inset; 
+}
+.persons .parent-card .card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 10%);
+}
+.persons .parent-card .card .image {
+  width: 350px;
+  height: 450px;
+}
+.persons .parent-card .card .image img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.25s;
+}
+.persons .parent-card .card:hover img {
+  transform: scale(1.1);
+}
+.persons .parent-card .card .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  z-index: 1;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.persons .parent-card .card .info small {
+  font-size: 1rem;
+}
+
+
+                         /* section products*/
+.products {
+  padding: 7rem 13%;
+  margin-top: 6rem;
+  background: #f5f7f4;
+}
+ .h22 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+}
+ .h22::before {
+  content: "";
+  left: 50%;
+  top: -25px;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #6c17e3;
+}
+.products .parent-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.products .parent-card .card {
+  width: 335px;
+  height: 380px;
+  position: relative;
+  background: #fff;
+}
+.products .parent-card .card .image {
+  width: 335px;
+  height: 220px;
+}
+.products .parent-card .card .image img {
+  width: 100%;
+  height: 100%;
+}
+.products .parent-card .card .product-info {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.products .parent-card .card .product-info p {
+  padding: 0.6rem 0;
+  color: #999;
+}
+.products .parent-card .card .product-info span {
+  color: #7971ea;
+  font-size: 1.3rem;
+}
+.products .parent-card .card .product-info small {
+  color: #7971ea;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+                              /* section blog */
+.blog {
+  margin-top: 7rem;
+  padding: 0 13% 4rem;
+  border-bottom: 1px solid #eeecff;
+}
+.blog .parent-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding-top: 3.3rem;
+}
+.blog .parent-blog .left-blog .image{
+   width: 620px;
+   height: 420px;
+}
+.blog .parent-blog .left-blog .image img {
+  width: 100%;
+}
+
+.blog .parent-blog .right-blog {
+  text-align: center;
+}
+.blog .parent-blog .right-blog .less {
+  color: #7971ea;
+  font-size: 1.9rem;
+  font-weight: 500;
+} 
+.blog-info {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  color: #999;
+}
+.blog-info p span {
+   color: #7971ea;
+}
+.blog-info li {
+  padding-left: 1rem;
+}
+.blog .parent-blog .right-blog .lorem {
+  color: #999;
+  line-height: 1.6;
+  max-width: 90%;
+  margin: auto;
+  padding: 1rem 0;
+}
+.btn {
+   background-color: #7971ea;
+   color: #fff;
+   padding: 10px 20px;
+   font-size: 0.9rem;
+   border: none;
+   outline: none;
+   transition: all 0.4s;
+   cursor: pointer;
+   letter-spacing: 2px;
+   position: relative;
+   top: 0;
+   border-radius: 6px;
+}
+.btn:hover {
+ top: -3px;
+ background-color: #5a50e5;
+ box-shadow: rgb(0 0 0 / 90%) 0px 5px 12px -5px;
+}
+
+
+                        /* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 13%;
+}
+footer .image {
+  width: 240px;
+  height: 110px;
+}
+footer .image img {
+  width: 100%;
+  height: 100%;
+}
+footer .ul-1 h3 {
+   font-size: 1.2rem;
+   font-weight: 600;
+}
+footer .ul-1 ,
+footer .ul-2 ,
+footer .ul-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer ul a {
+  color: #5c626e;
+  transition: all 0.3s;
+}
+footer ul a:hover {
+  color: #5a50e5;
+}
+footer .ul-4 h3 {
+  padding-bottom: 1rem;
+}
+footer .ul-4 a.findinf{
+  color: #7971ea;
+  padding: 1rem 0;
+  display: block;
+}
+footer .ul-5 div:nth-child(3),
+footer .ul-5 h3 {
+  padding: 1rem 0;
+}
+footer .ul-5 div {
+  display: flex;
+  gap: 0.8rem;
+}
+footer .ul-5 div i {
+  color: #5a50e5;
+}
+footer .ul-5 div p {
+  color: #5c626e;
+}
+footer .ul-5 div:last-of-type {
+  position: relative;
+  display: block;
+}
+footer .ul-5 div:last-of-type button {
+  position: absolute;
+  width: 60px;
+  top: 79%;
+  transform: translateY(-50%);
+  right: 3px;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 8px;
+  background: rgb(120, 113, 234);
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+footer .ul-5 div:last-of-type button:hover {
+  background: #5a50e5;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 90%) 0px 5px 12px -5px;
+}
+footer .ul-5 div:last-of-type p {
+  font-size: 1.4rem;
+  color: #272424d9;
+  margin-bottom: 0.8rem;
+  padding-top: 2.2rem;
+}
+footer .ul-5 div:last-of-type input {
+  display: block;
+  width: 100%;
+  height: 2.3rem;
+  padding: 1.6rem 0.8rem;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid #999;
+}
+footer .ul-5 div:last-of-type input:focus {
+  outline: none;
+  border: 1px solid #5a50e5;
+}
+footer .ul-1 ,
+footer .ul-2 ,
+footer .ul-3 {
+  margin-top: -63px;
+}
+footer .ul-5 {
+  margin-top: 40px;
+}
+
+                           /* copy right */
+.copy-right {
+  padding: 7rem 13% 5rem;
+  text-align: center;
+}
+.copy-right p {
+  color: #999;
+}
+.copy-right p span {
+  color: #5a50e5;
+}
+
+

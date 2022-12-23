@@ -1,0 +1,237 @@
+                 /*  section Home / About */
+section {
+  padding: 1.5rem 13%;
+  background-color: #f5f7f4;
+  display: flex;
+}
+                  /* Shop */
+.parent {
+  display: flex;
+  gap: 2rem;
+  padding: 4.5rem 13%;
+}
+ aside .card1 {
+  width: 250px;
+  border: 1px solid #dee2e6;
+  padding: 20px 20px;
+}  
+ aside .card1 h4 {
+  margin-bottom: 1rem;
+}
+ aside .card1 div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+ aside .card1 div p {
+  color: #7971ea;
+}
+
+ aside .card2 {
+  margin-top: 2rem;
+  width: 250px;
+  border: 1px solid #dee2e6;
+  padding: 20px 20px;
+}
+ aside .card2 h4 {
+  padding: 1rem 0;
+}
+ aside .card2 h4:nth-last-of-type(2) {
+  padding-top: 3rem;
+}
+ aside .card2 h4:nth-last-of-type(2) {
+  padding-top: 3rem;
+}
+ aside .card2 span.red ,
+ aside .card2 span.green ,
+ aside .card2 span.blue ,
+ aside .card2 span.purple {
+  position: relative;
+  padding-left: 2rem;
+}
+ aside .card2 span.red:before ,
+ aside .card2 span.green:before ,
+ aside .card2 span.blue:before ,
+ aside .card2 span.purple:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  left: 5px;
+  top: 2px;
+}
+ aside .card2 span.red:before {
+  background: red;;
+}
+ aside .card2 span.green:before {
+  background: green;;
+}
+ aside .card2 span.blue:before {
+  background: blue;;
+}
+ aside .card2 span.purple:before {
+  background: purple;;
+}
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  width: 100% !important;
+  height: 6rem;
+}
+.shop h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.shop .shop-right button {
+   margin-left: 0.5rem;
+   cursor: pointer;
+   padding: 10px 19px;
+   background-color: #e6e7e9;
+   border: none;
+   color: #000;
+   text-transform: uppercase;
+   position: relative;
+   transition: 0.3s all ease;
+   top: 0;
+   letter-spacing: 2px;
+   font-size: 13px;
+   border-radius: 5px;
+}
+.shop .shop-right button:hover {
+    box-shadow: rgb(0 0 0 / 90%) 0 5px 14px -5px;
+    top: -2px;
+}
+.shop .shop-right button i {
+  padding-left: 3px;
+}
+#button.active {
+  background: #545b62 !important;
+  color: #fff !important;
+}
+
+
+/* drop dwon */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 170px;
+  margin-left: 8px;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: #16181b;
+  background-color: #f8f9fa;
+}
+.show {
+  display:block;
+}
+
+
+
+                         /* section products*/
+.parent-shop-product {
+  display: flex;
+  flex-direction: column;
+}
+.product {
+ margin-left: -1.7rem;
+}
+.product .parent-card {
+  display: flex;
+  justify-content: center;
+  gap: 2rem !important;
+  flex-wrap: wrap;
+}
+.product .parent-card .card {
+  width: 250px;
+  height: 360px;
+  position: relative;
+  background: #fff;
+  box-shadow: 0 0 30px -10px rgb(0 0 0 / 10%);
+  background: #fff;
+  border: 1px solid #dee2e6!important;
+}
+.product .parent-card .card .image {
+  width: 250px;
+  height: 200px;
+}
+.product .parent-card .card .image img {
+  width: 100%;
+  height: 100%;
+}
+.product .parent-card .card .product-info {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.product .parent-card .card .product-info p {
+  padding: 0.6rem 0;
+  color: #999;
+}
+.product .parent-card .card .product-info span {
+  color: #7971ea;
+  font-size: 1.3rem;
+}
+.product .parent-card .card .product-info small {
+  color: #7971ea;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+ /* pagination */
+ .center {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  line-height: 2.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #7971ea;
+  color: white;
+  border: 1px solid #7971ea;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+                         /* section persons*/
+.persons {
+  border: none !important;
+}
+
+
+
+
+

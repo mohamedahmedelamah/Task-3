@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- link css -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- link css cart -->
+  <link rel="stylesheet" href="./cart.css">
+  <!-- link css single-pro -->
+  <link rel="stylesheet" href="../single-pro/single-pro.css">
+</head>
+<body>
+  
+
+                       <!-- nav -->
+     <nav>
+         <div class="nav-left">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search">
+         </div>
+
+         <div class="nav-center">
+             <button>Omar Mohamed</button>
+         </div>
+
+        <div class="nav-right">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>2</p>
+          </div>
+        </div>
+     </nav>
+
+                       <!-- navbar -->
+    <div class="navbar">
+         <li>
+          <a href="/">home</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+         <li>
+          <a href="../about/about.html">about</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+         <li><a href="../shop/shop.html">shop</a></li>
+         <li><a href="#">catalogue</a></li>
+         <li><a href="#">new arrivals</a></li>
+         <li><a href="../contact/contact.html">contact</a></li>
+    </div>          
+
+
+                        <!-- section Home / cart -->
+<section>
+  <a href="/" style="color: #7971ea;">Home </a>
+  <li> / Cart</li>
+</section>
+
+                          <!-- table -->
+<form>
+    <table>
+      <thead>
+        <tr>
+          <th class="product-thumbnail">Image</th>
+          <th class="product-name">Product</th>
+          <th class="product-price">Price</th>
+          <th class="product-quantity">Quantity</th>
+          <th class="product-total">Total</th>
+          <th class="product-remove">Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="image">
+            <img src="../images/cloth_1.jpg" alt="cloth">
+          </td>
+          <td>
+            <h2>Top Up T-Shirt</h2>
+          </td>
+          <td>$49.00</td>
+          <td>
+             <!--inpu number -->
+             <div class="quantity">
+              <div class="input-butt1">-</div>
+              <input type="number" min="1" max="9" step="1" value="1">
+              <div class="input-butt2">+</div>
+            </div>
+
+          </td>
+          <td>$49.00</td>
+          <td><a href="#" class="btn">X</a></td>
+        </tr>
+
+        <tr>
+          <td>
+            <img src="../images/cloth_2.jpg" alt="cloth">
+          </td>
+          <td>
+            <h2>Polo Shirt</h2>
+          </td>
+          <td>$49.00</td>
+          <td>
+                   <!--inpu number -->
+                   <div class="quantity">
+                    <div class="input-butt1">-</div>
+                    <input type="number" min="1" max="9" step="1" value="1">
+                    <div class="input-butt2">+</div>
+                  </div>
+                  
+          </td>
+          <td>$49.00</td>
+          <td><a href="#" class="btn">X</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+</form>
+
+                         <!-- details cart -->
+<div class="details-cart">
+    <div class="details-cart-left">
+        <div>
+            <button class="btn">update cart</button>
+            <button class="btnn">continue shopping</button>
+        </div>
+        <div class="coupon">
+            <h3>Coupon</h3>
+            <p>Enter your coupon code if you have one.</p>
+            <div>
+                <input type="text" placeholder="Coupon Code">
+                <button class="btn">apply coupon</button>
+            </div>
+        </div>
+    </div>
+    <div class="details-cart-right">
+         <h3>cart total</h3>
+        <div class="price">
+            <div>
+                <span>Subtotal</span>
+                <p>$230.00</p>
+            </div>
+            <div>
+                <span>Total</span>
+                <p>$230.00</p>
+            </div>
+        </div>
+        <a href="../checkout/checkout.html">
+          <button class="btn">Proceed To Checkout</button>
+        </a>
+    </div>
+</div>
+
+                         
+                          <!-- footer -->
+<footer>
+    
+   <ul class="ul-1">
+      <h3>Navigations</h3>
+      <li><a href="#">Sell online</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Shopping cart</a></li>
+      <li><a href="#">Store builder</a></li>
+   </ul>
+
+   <ul class="ul-2">
+      <h3></h3>
+      <li><a href="#">Mobile commerce</a></li>
+      <li><a href="#">Dropshipping</a></li>
+      <li><a href="#">Website development</a></li>
+   </ul>
+
+   <ul class="ul-3">
+      <h3></h3>
+      <li><a href="#">Point of sale</a></li>
+      <li><a href="#">Hardware</a></li>
+      <li><a href="#">Software</a></li>
+   </ul>
+
+    <ul class="ul-4">
+        <h3>Promo</h3>
+        <div class="image">
+            <img src="../images/hero_1.jpg" alt="hero">
+        </div>
+        <li><a class="findinf" href="#">Finding Your Perfect Shoes</a></li>
+        <li><a class="promo" href="#">Promo from nuary 15 — 25, 2019</a></li>
+    </ul>
+
+    <ul class="ul-5">
+       <h3>Contact Info</h3>
+       <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>203 Fake St. Mountain View, San <br> Francisco, California, USA</p>
+       </div>
+       <div>
+        <i class="fa-solid fa-phone"></i>
+        <p>+201090540382</p>
+       </div>
+       <div>
+        <i class="fa-solid fa-envelope"></i>
+        <p>omarabdelraheem08@gmail.com</p>
+       </div>
+       <div>
+        <p>Subscribe</p>
+        <input type="email" placeholder="Email">
+        <button>SEND</button>
+       </div>
+    </ul>
+
+</footer>
+
+                          <!-- copyright -->
+<div class="copy-right">
+  <p>Copyright ©2022 All rights reserved |
+     This template is made with  by <span>Omar Mohamed</span></p>
+</div>
+
+
+</body>
+</html>

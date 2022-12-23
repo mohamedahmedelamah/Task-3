@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shope page</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css shop-->
+    <link rel="stylesheet" href="./shop.css">
+  <!-- link css -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- link JS -->
+  <script defer src="../main.js"></script>
+</head>
+<body>
+  
+    
+                       <!-- nav -->
+     <nav>
+         <div class="nav-left">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search">
+         </div>
+
+         <div class="nav-center">
+             <button>Omar Mohamed</button>
+         </div>
+
+        <div class="nav-right">
+          <i class="fa-solid fa-user"></i>
+          <i class="fa-regular fa-heart"></i>
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p>2</p>
+          </div>
+        </div>
+     </nav>
+
+                       <!-- navbar -->
+    <div class="navbar">
+         <li>
+          <a href="/">home</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+         <li>
+          <a href="../about/about.html">about</a>
+          <i class="fa-solid fa-chevron-down"></i>
+        </li>
+         <li><a href="../shop/shop.html">shop</a></li>
+         <li><a href="#">catalogue</a></li>
+         <li><a href="#">new arrivals</a></li>
+         <li><a href="../contact/contact.html">contact</a></li>
+    </div>  
+
+                        <!-- section Home / About -->
+<section>
+  <a href="/" style="color: #7971ea;">Home </a>
+  <li> / Shop</li>
+</section>
+
+                         <!-- shop all -->
+
+<div class="parent">
+    <aside>
+       <div class="card1">
+          <h4>CATEGORIES</h4>
+          <div><p>Men</p> <span>(2,220)</span></div>
+          <div><p>Women</p> <span>(2,550)</span></div>
+          <div><p>Children</p> <span>(2,124)</span></div>
+       </div>
+       <div class="card2">
+           <h4>FILTER BY PRICE</h4>
+           <input type="range">
+           <p>$117 - $326</p>
+           <h4>SIZE</h4>
+  <input type="checkbox" id="small" value="small">
+  <label for="small"> Small (2,319)</label><br><br>
+  <input type="checkbox" id="medium" value="medium">
+  <label for="medium"> Medium (1,282)</label><br><br>
+  <input type="checkbox" id="large" value="large">
+  <label for="large"> Large (1,392)</label><br><br><br>
+  
+  <h4>COLOR</h4>
+  <span class="red">Red (2,429)</span><br><br>
+  <span class="green">Green (2,298)</span><br><br>
+  <span class="blue">Blue (1,075)</span><br><br>
+  <span class="purple">Purple (1,075)</span>
+  </div>
+    </aside>
+  
+<div class="parent-shop-product">
+    <div class="shop">
+      <div class="shop-left">
+          <h3>Shop All</h3>
+      </div>
+      <div class="shop-right">
+            
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn latest" id="button">
+                latest<i class="fa-solid fa-caret-down"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Children</a>
+              </div>
+            </div>
+  
+
+            <button>reference
+              <i class="fa-solid fa-caret-down"></i></button>
+      </div>
+    </div>
+                            <!-- products -->
+    <div class="product">
+      <div class="parent-card">
+  
+          <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/cloth_1.jpg" alt="Tank Top">
+              </div>
+              <div class="product-info">
+                  <span>Tank Top</span>
+                  <p>finding perfect-shirt</p>
+                  <small>$50</small>
+              </div>
+         </div>
+          </a>
+  
+          <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/shoe_1.jpg" alt="Corater">
+              </div>
+              <div class="product-info">
+                  <span>Corater</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+         </div>
+          </a>
+  
+           <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/cloth_2.jpg" alt="Polo Shirt">
+              </div>
+              <div class="product-info">
+                  <span>Polo Shirt</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+         </div>
+           </a>
+
+            <a href="../single-pro/single-pro.html">
+              <div class="card">
+                <div class="image">
+                     <img src="../images/cloth_3.jpg" alt="T-Shirt Mockup">
+                </div>
+                <div class="product-info">
+                    <span>T-Shirt Mockup</span>
+                    <p>finding perfect products</p>
+                    <small>$50</small>
+                </div>
+           </div>
+            </a>
+  
+           <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/shoe_1.jpg" alt="Corater">
+              </div>
+              <div class="product-info">
+                  <span>Corater</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+             </div>
+             
+           </a>
+
+          <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/cloth_1.jpg" alt="Tank Top">
+              </div>
+              <div class="product-info">
+                  <span>Tank Top</span>
+                  <p>finding perfect-shirt</p>
+                  <small>$50</small>
+              </div>
+            </div>
+          </a>
+
+          <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/shoe_1.jpg" alt="Corater">
+              </div>
+              <div class="product-info">
+                  <span>Corater</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+             </div>
+          </a>
+
+           <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/cloth_2.jpg" alt="Polo Shirt">
+              </div>
+              <div class="product-info">
+                  <span>Polo Shirt</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+             </div>
+           </a>
+
+           <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/cloth_3.jpg" alt="T-Shirt Mockup">
+              </div>
+              <div class="product-info">
+                  <span>T-Shirt Mockup</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+             </div>
+           </a>
+
+          <a href="../single-pro/single-pro.html">
+            <div class="card">
+              <div class="image">
+                   <img src="../images/shoe_1.jpg" alt="Corater">
+              </div>
+              <div class="product-info">
+                  <span>Corater</span>
+                  <p>finding perfect products</p>
+                  <small>$50</small>
+              </div>
+             </div>
+  
+          </a>
+
+         <a href="../single-pro/single-pro.html">
+          <div class="card">
+            <div class="image">
+                 <img src="../images/cloth_1.jpg" alt="Tank Top">
+            </div>
+            <div class="product-info">
+                <span>Tank Top</span>
+                <p>finding perfect-shirt</p>
+                <small>$50</small>
+            </div>
+           </div>
+         </a>
+
+         <a href="../single-pro/single-pro.html">
+          <div class="card">
+            <div class="image">
+                 <img src="../images/cloth_2.jpg" alt="Polo Shirt">
+            </div>
+            <div class="product-info">
+                <span>Polo Shirt</span>
+                <p>finding perfect products</p>
+                <small>$50</small>
+            </div>
+           </div>
+         </a>
+
+      </div>
+      <div class="center">
+        <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+        </div>
+      </div>
+  </div>
+
+                        <!-- section persons-->
+
+</div>
+    </div>
+                        <!-- section persons-->
+<div class="persons">
+  <h2 class="h22" style="padding-bottom: 1.8rem;">Categories</h2>
+  <div class="parent-card">
+
+    <div class="card">
+      <div class="overlay"></div>
+         <div class="image">
+            <img src="../images/women.jpg" alt="women">
+         </div>
+         <div class="info">
+            <small>collection</small>
+            <h2>Women</h2>
+         </div>
+    </div>
+
+    <div class="card">
+      <div class="overlay"></div>
+         <div class="image">
+            <img src="../images/children.jpg" alt="children">
+         </div>
+         <div class="info">
+            <small>collection</small>
+            <h2>children</h2>
+         </div>
+    </div>
+
+    <div class="card">
+      <div class="overlay"></div>
+         <div class="image">
+            <img src="../images/men.jpg" alt="men">
+         </div>
+         <div class="info">
+            <small>collection</small>
+            <h2>men</h2>
+         </div>
+    </div>
+
+
+</div>
+</div>
+
+                          <!-- footer -->
+<footer style="padding-top: 4rem;">
+    
+   <ul class="ul-1">
+      <h3>Navigations</h3>
+      <li><a href="#">Sell online</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Shopping cart</a></li>
+      <li><a href="#">Store builder</a></li>
+   </ul>
+
+   <ul class="ul-2">
+      <h3></h3>
+      <li><a href="#">Mobile commerce</a></li>
+      <li><a href="#">Dropshipping</a></li>
+      <li><a href="#">Website development</a></li>
+   </ul>
+
+   <ul class="ul-3">
+      <h3></h3>
+      <li><a href="#">Point of sale</a></li>
+      <li><a href="#">Hardware</a></li>
+      <li><a href="#">Software</a></li>
+   </ul>
+
+    <ul class="ul-4">
+        <h3>Promo</h3>
+        <div class="image">
+            <img src="../images/hero_1.jpg" alt="hero">
+        </div>
+        <li><a class="findinf" href="#">Finding Your Perfect Shoes</a></li>
+        <li><a class="promo" href="#">Promo from nuary 15 — 25, 2019</a></li>
+    </ul>
+
+    <ul class="ul-5">
+       <h3>Contact Info</h3>
+       <div>
+        <i class="fa-solid fa-location-dot"></i>
+        <p>203 Fake St. Mountain View, San <br> Francisco, California, USA</p>
+       </div>
+       <div>
+        <i class="fa-solid fa-phone"></i>
+        <p>+201090540382</p>
+       </div>
+       <div>
+        <i class="fa-solid fa-envelope"></i>
+        <p>omarabdelraheem08@gmail.com</p>
+       </div>
+       <div>
+        <p>Subscribe</p>
+        <input type="email" placeholder="Email">
+        <button>SEND</button>
+       </div>
+    </ul>
+
+</footer>
+
+                          <!-- copyright -->
+<div class="copy-right">
+  <p>Copyright ©2022 All rights reserved |
+     This template is made with  by <span>Omar Mohamed</span></p>
+</div>
+
+
+
+</div>
+</body>
+</html>

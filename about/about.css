@@ -1,0 +1,108 @@
+               /* section Home / About */
+section {
+  padding: 1.5rem 13%;
+  background-color: #f5f7f4;
+  display: flex;
+}
+
+                     /* How */
+.how {
+  padding: 5rem 13% 6rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+  padding-bottom: 4rem;
+}
+.how .how-left {
+  width: 2000px;
+  height: auto;
+  position: relative;
+}
+.how .how-left::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.how .how-left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.how .how-right {
+  margin-top: 1.8rem;
+}
+.how .how-right h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  position: relative;
+}
+.how .how-right h2:before {
+  content: "";
+  left: 20px;
+  top: -25px;
+  transform: translateX(-50%);
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background: #6c17e3;
+}
+.how .how-right p:first-of-type {
+  color: #8c92a0;
+  padding: 1.8rem 0;
+  line-height: 1.5;
+}
+.how .how-right p:last-of-type {
+  color: #8c92a0;
+  line-height: 1.5;
+}
+
+                          /* team */
+.team {
+  padding: 6rem 13% 4rem;
+  border-top: 1px solid #eeecff;
+  border-bottom: 1px solid #eeecff;
+}
+.team .parent-card {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.team .card {
+  width: 260px;
+  text-align: center;
+}
+.team .card .image {
+  width: 8rem;
+  height: 8rem;
+  margin: auto;
+}
+.team .card .image img {
+   max-width: 100%;
+   max-height: 100%;
+   border-radius: 50%;
+}
+.team .card h3 {
+  margin-top: 1.5rem;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.team .card span {
+   color: #8c92a0;
+   font-size: 0.85rem;
+}
+.team .card p {
+   padding-top: 2rem;
+   color: #8c92a0;
+   line-height: 1.7;
+}
+
+footer {
+  border-top: 1px solid #eeecff; 
+}

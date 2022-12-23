@@ -1,0 +1,214 @@
+                 /*  section */
+section {
+  padding: 1.5rem 13%;
+  background-color: #f5f7f4;
+  display: flex;
+}
+.login {
+  margin-top: 4.2rem;
+  padding: 0 13%;
+}
+.login p {
+  border: 1px solid #dee2e6;
+  color: #8c92a0;
+  padding: 30px;
+}
+.login p span {
+   color: #7971ea;
+}
+
+                               /* form */
+.parent-form {
+  margin-top: 4rem;
+  padding: 0 13% 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.2rem;
+}
+.parent-form h2 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.parent-form .form-left {
+  flex: 1;
+}
+.parent-form .form-right {
+  flex: 1;
+}
+.parent-form .form-leftt {
+  border: 1px solid #dee2e6;
+  padding: 40px;
+}
+.parent-form .form-left .country{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.parent-form .form-left label span{
+  color: red;
+}
+.parent-form .form-left #country{
+  border: 1px solid #ced4da;
+  outline: none;
+  padding: 0.8rem;
+}
+.parent-form .form-left #country:focus {
+  border: 1px solid #7971ea;
+}
+.parent-form .form-left #country option {
+  font-size: 1rem;
+}
+.parent-form .form-left .first {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1.8rem;
+}
+ .inputt {
+  border: 1px solid #ced4da;
+  outline: none;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-top: 0.8rem;
+}
+.inputt:focus {
+  border: 1px solid #7971ea;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.flex-r {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+}
+.account {
+  margin-top: 2.9rem;
+  color: #000;
+  font-size: 1.1rem;
+}
+.address {
+  margin-top: 1rem;
+  color: #000;
+  font-size: 1.1rem;
+}
+.textare {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.textare textarea {
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+}
+.textare textarea:focus {
+  border: 1px solid #7971ea;;
+}
+.textare textarea::placeholder {
+  padding: 0;
+  margin: 0;
+}
+
+/* .form-right */
+
+.form-rightt {
+  border: 1px solid #dee2e6;
+  padding: 40px;
+  margin-bottom: 3.5rem;
+}
+.form-right h2{
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.form-rightt label {
+  color: #000;
+}
+.form-rightt .coupon {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.form-rightt .coupon .inputt {
+  height: 40px;
+  width: 60%;
+  border-right-style: none;
+}
+.form-rightt .coupon .btn {
+  height: 40px;
+  margin-bottom: -0.8rem;
+  margin-left: -1rem;
+}
+.form-righttt {
+  border: 1px solid #dee2e6;
+  padding: 50px;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  text-align: center;
+}
+.order div {
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0 2rem; */
+  position: relative;
+}
+.order .hrr::before {
+  content: "";
+  position: absolute;
+  background: #dee2e6;
+  width: 100%;
+  height: 1px;
+  bottom: -15px;
+  left: 0;
+}
+.order .hrrr::before {
+  content: "";
+  position: absolute;
+  background: #dee2e6;
+  width: 100%;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+}
+.bold {
+  font-weight: bold;
+  font-weight: 1.1rem;
+}
+.parent-h3 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.parent-h3 h3 {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem
+}
+.parent-h3 div {
+  color: #7971ea;
+  border: 1px solid #dee2e6;
+  padding: 10px;
+}
+.form-righttt button {
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 50px;
+  width: 100%;
+}
+footer {
+  padding-top: 4rem;
+  border-top: 1px solid #dee2e6;
+}
